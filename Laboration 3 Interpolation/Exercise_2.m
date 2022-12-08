@@ -36,3 +36,7 @@ f1_bar_minus_f1 = exp(-1.5/5)+sin(1.5)-1.7383
 
 u=(xvalue-1)/(1.5-1);
 Rxf = (1-u)*f0_bar_minus_f0+u*f1_bar_minus_f1; % 8.6195e-06
+
+format long
+Rb=exp(-1.3/5)+sin(1.3)-1.70706
+

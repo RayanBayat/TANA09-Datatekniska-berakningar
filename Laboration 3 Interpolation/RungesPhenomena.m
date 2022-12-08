@@ -9,7 +9,9 @@ function []=RungesPhenomena( N );
 %
 % Pick a vector of interpolation points and compute function values.   
 %
- x=-1+2*(0:N)/N;y=1./(1+25*x.^2);
+ x=-1+2*(0:N)/N;
+ 
+ y=1./(1+25*x.^2);
  
 %
 % Compute and plot the interpolating polynomial. Also plot the function.

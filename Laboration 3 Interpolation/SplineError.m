@@ -4,7 +4,7 @@
 %  Fix a stepsize h and create a vector of equidistant points on the  
 % interval 0<x<1. Change to the step size you want to use.
 
-  h=????;
+  h=1;
   x=0:h:1;  
   
 % Create the function f(x) as an inline function.
@@ -13,7 +13,7 @@
 
 % We should interpolate using derivative end point conditions. Change 
 % so the correct numeric values are used for f'(0) and f'(1)  
-  spfun=csape(x,f(x),'complete',[???? ????]); 
+  spfun=csape(x,f(x),'complete',[0 7/3]); 
 
 % Create a "dense" vector xx and plot both the error.
   
