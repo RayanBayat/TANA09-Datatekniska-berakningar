@@ -18,7 +18,6 @@ df = @(x) 2*x-4*cos(x);
 
 function [x,e]=NewtonSolv( xk , f , df , tol );
 
-
  N=20;  % Maximum number of iterations. 
 
  x=xk;
@@ -31,3 +30,5 @@ function [x,e]=NewtonSolv( xk , f , df , tol );
      end;
  end;
 semilogy(1:length(x),abs(x-x(end)), 1:length(e), abs(e) );
+
+
