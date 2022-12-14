@@ -10,3 +10,4 @@ function [ Points ]=AddPointsToMap( n );
     Points(i,:)=ginput(1);
     plot(Points(i,1),Points(i,2),'b.','MarkerSize',12,'LineWidth',1.4);
   end;
+ 

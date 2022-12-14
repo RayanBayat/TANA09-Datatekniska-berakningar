@@ -11,8 +11,8 @@ N=1000;
 % Bezi'er curves. In the exercise you will successively add more points
 % into this matrix.
 %
- Control=[23   23  10  0   23 20 -10 -15  -20  -40 -40  -40  0  23
-          195 213 213 213  20 0  0   0     0    20   70  120 170 125]
+ Control=[23   23  5    0
+          195 200 213 213]
 
 
 
@@ -32,15 +32,6 @@ end;
  plot(Points(1,6:7),Points(2,6:7),'k')
  plot(Points(1,8:11),Points(2,8:11),'k')
 
-
- x1 = -60;
-x2 = 80;
-y = 0;
-
-% Create the line object
-line([x1, x2], [y, y]);
-
-
 %
 % Here you should set up control points for curve segment A and draw
 % the curve using your Bezier spline function. The curve should start at  
@@ -49,34 +40,7 @@ line([x1, x2], [y, y]);
 % Add the new control points into the matrix Control above. And access
 % them in the same was we access coordinates from the Points matrix, e.g.  
 %
- C1=Control(:,1);
-  C2=Control(:,2);
-    C3=Control(:,3);
-  C4=Control(:,4);
-
-DisplayBezierPatch(N,C1,C2,C3,C4);
-
-
- C5=Control(:,5);
-  C6=Control(:,6);
-    C7=Control(:,7);
-  C8=Control(:,8);
-
-DisplayBezierPatch(N,C5,C6,C7,C8);
- C9=Control(:,9);
-  C10=Control(:,10);
-    C11=Control(:,11);
-
-
-DisplayBezierPatch(N,C8,C9,C10,C11);
-
- C12=Control(:,12);
-  C13=Control(:,13);
-    C14=Control(:,14);
-
-
-DisplayBezierPatch(N,C11,C12,C13,C14);
-
+  C1=Control(:,1)
 % 
 % where column 1 of the Control matrix holds the coordinates for control
 % point C1.
